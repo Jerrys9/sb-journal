@@ -12,6 +12,19 @@ def get(name=None):
     return db_collection.find(query)
 
 
+def add(name, **other_data):
+    if list(get(name)):
+        raise ValueError("the team already exists in the DB")
+
+    db_collection = get_db_collection()
+
+    name_data = {"name": name}
+
+    return db_collection.insert_one(
+        {**name_data, **other_data}
+    )
+
+
 def delete(name=None):
     db_collection = get_db_collection()
 
