@@ -14,7 +14,7 @@ def get(name=None):
 
 def add(name, **other_data):
     if list(get(name)):
-        raise ValueError("the team already exists in the DB")
+        raise ValueError ("the team already exists in the DB")
 
     db_collection = get_db_collection()
 
@@ -22,6 +22,20 @@ def add(name, **other_data):
 
     return db_collection.insert_one(
         {**name_data, **other_data}
+    )
+
+
+def edit(name, **other_data):
+    if not list(get(name)):
+        raise ValueError ("the team does not exist in the DB")
+
+    db_collection = get_db_collection()
+
+    name_data = {"name": name}
+
+    return db_collection.replace_one(
+        name_data,
+        {**name_data, **other_data},
     )
 
 
