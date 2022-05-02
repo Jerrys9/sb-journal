@@ -40,6 +40,9 @@ def edit(name, **other_data):
 
 
 def delete(name=None):
+    if not list(get(name)):
+        raise ValueError ("the team does not exist in the DB")
+
     db_collection = get_db_collection()
 
     if name is None:
