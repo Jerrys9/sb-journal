@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from .intro import show_intro
 from .prompt import show_prompt
 from .actions import ACTIONS
@@ -6,10 +8,10 @@ from .actions import ACTIONS
 def mainloop():
     show_intro()
 
-    action_choices = {
-        name[0].lower(): function
+    action_choices = OrderedDict([
+        (name[0].lower(), function)
         for function, name, _ in ACTIONS
-    }
+    ])
 
     while True:
         print()
