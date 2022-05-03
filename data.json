@@ -1,0 +1,48 @@
+{
+  "teams": [
+    {
+      "name": "Panthers",
+      "seasons": [50]
+    },
+    {
+      "name": "Ravens",
+      "seasons": [47]
+    },
+    {
+      "name": "49ers",
+      "seasons": [47]
+    },
+    {
+      "name": "Broncos",
+      "seasons": [48, 50]
+    },
+    {
+      "name": "Falcons",
+      "seasons": [51]
+    },
+    {
+      "name": "Chiefs",
+      "seasons": [54, 55]
+    },
+    {
+      "name": "Buccaneers",
+      "seasons": [55]
+    },
+    {
+      "name": "Rams",
+      "seasons": [53, 56]
+    },
+    {
+      "name": "Bengals",
+      "seasons": [56]
+    },
+    {
+      "name": "Seahawks",
+      "seasons": [48, 49]
+    },
+    {
+      "name": "Patriots",
+      "seasons": [51, 52, 53]
+    }
+  ]
+}
