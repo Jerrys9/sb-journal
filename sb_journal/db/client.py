@@ -13,4 +13,4 @@ def get_db_client():
 
 
 def get_db_collection():
-    return get_db_client().sb_catalog.teams
+    return get_db_client().sb_journal.teams

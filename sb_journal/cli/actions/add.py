@@ -1,5 +1,5 @@
-from sb_catalog.db import crud
-from sb_catalog.db.crud.validators import validator_nexists
+from sb_journal.db import crud
+from sb_journal.db.crud.validators import validator_nexists
 
 
 def add():

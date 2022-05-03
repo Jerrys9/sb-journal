@@ -1,4 +1,4 @@
-from sb_catalog.db.parser import parse_to_db
+from sb_journal.db.parser import parse_to_db
 
 
 def parse():

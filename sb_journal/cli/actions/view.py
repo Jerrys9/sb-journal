@@ -1,4 +1,4 @@
-from sb_catalog.db import crud
+from sb_journal.db import crud
 
 
 def view():

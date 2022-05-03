@@ -1,5 +1,5 @@
 def show_intro():
-    print("Welcome to the Super Bowl Catalog!")
+    print("Welcome to the Super Bowl Journal!")
     print()
 
     print(
