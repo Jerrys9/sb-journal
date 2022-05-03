@@ -1,4 +1,4 @@
-from sb_catalog.storage import crud
+from sb_catalog.db import crud
 
 
 def view():

@@ -1,4 +1,4 @@
-from sb_catalog.storage.client import get_db_collection
+from sb_catalog.db.client import get_db_collection
 from .validators import validator_exists
 
 
