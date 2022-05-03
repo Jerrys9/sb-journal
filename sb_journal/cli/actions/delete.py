@@ -3,7 +3,6 @@ from sb_journal.db import crud
 
 def delete():
     name = input("Enter team name (leave blank to delete all): ")
-    name = name.strip()
 
     if not name:
         name = None

@@ -3,7 +3,6 @@ from sb_journal.db import crud
 
 def view():
     name = input("Enter team name (leave blank to view all): ")
-    name = name.strip()
 
     if not name:
         name = None
