@@ -7,7 +7,11 @@ def view():
     if not name:
         name = None
 
-    teams = list(crud.get(name))
+    try:
+        teams = list(crud.get(name))
+    except Exception as e:
+        print("Error:", e)
+        return
 
     if not teams:
         print("No teams to show!")
