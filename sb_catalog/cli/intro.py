@@ -6,7 +6,7 @@ def show_intro():
         "This command-line application provides information"
         " about Super Bowl teams and seasons when they played."
         "\n"
-        "You can view/add/edit/delete data "
-        "from the DB."
+        "You can import (parse) data from JSON, and"
+        " view/add/edit/delete data from the DB."
     )
     print()
