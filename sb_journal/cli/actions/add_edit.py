@@ -1,12 +1,12 @@
 from sb_journal.db import crud
-from sb_journal.db.crud.validators import validator_nexists
+from sb_journal.db.crud.validators import validator_exists, validator_nexists
 
 
-def add():
+def _base(method, validator):
     name = input("Enter team name: ")
 
     try:
-        validator_nexists(name)
+        validator(name)
     except Exception as e:
         print("Error:", e)
         return
@@ -20,6 +20,14 @@ def add():
         return
 
     try:
-        crud.add(name=name, seasons=seasons)
+        getattr(crud, method)(name=name, seasons=seasons)
     except Exception as e:
         print("Error:", e)
+
+
+def add():
+    return _base("add", validator_nexists)
+
+
+def edit():
+    return _base("edit", validator_exists)

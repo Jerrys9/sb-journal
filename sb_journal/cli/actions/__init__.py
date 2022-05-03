@@ -1,7 +1,6 @@
 from .parse import parse
 from .view import view
-from .add import add
-from .edit import edit
+from .add_edit import add, edit
 from .delete import delete
 from .quit import quit_
 
