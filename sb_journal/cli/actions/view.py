@@ -15,4 +15,7 @@ def view():
         return
 
     for team in teams:
-        print(f"\t{team['name']} | Seasons: {team['seasons']}")
+        print(
+            "\t", team['name'], " | Seasons: ", team['seasons'],
+            sep="",
+        )
