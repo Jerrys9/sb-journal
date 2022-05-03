@@ -8,7 +8,7 @@ and view/add/edit/delete data from the DB.
 ## Usage
 ### How to install?
 ```shell
-pip install -r requirements.txt
+pip install .
 ```
 ### How to start?
 ```shell
