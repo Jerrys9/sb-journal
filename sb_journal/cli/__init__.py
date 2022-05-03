@@ -8,10 +8,15 @@ from .actions import ACTIONS
 def mainloop():
     show_intro()
 
-    action_choices = OrderedDict([
-        (name[0].lower(), function)
-        for function, name, _ in ACTIONS
-    ])
+    action_choices = OrderedDict(
+        [
+            (name[0].lower(), function)
+            for function, name, _ in ACTIONS
+        ] + [
+            (name.lower(), function)
+            for function, name, _ in ACTIONS
+        ]
+    )
 
     while True:
         print()
@@ -24,7 +29,7 @@ def mainloop():
         if not choice:
             continue
 
-        choice = choice[0].lower()
+        choice = choice.lower()
         if choice not in action_choices:
             continue
 
