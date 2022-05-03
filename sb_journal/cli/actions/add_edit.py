@@ -11,18 +11,28 @@ def _base(method, validator):
         print("Error:", e)
         return
 
-    seasons = input("Enter seasons (space-separated): ")
-
-    try:
-        seasons = [int(season) for season in seasons.split()]
-    except ValueError:
-        print("Error: invalid seasons entered.")
-        return
+    seasons = _get_seasons()
 
     try:
         getattr(crud, method)(name=name, seasons=seasons)
     except Exception as e:
         print("Error:", e)
+
+
+def _get_seasons():
+    while True:
+        seasons = input("Enter seasons (space-separated): ")
+
+        try:
+            seasons = [int(season) for season in seasons.split()]
+        except ValueError:
+            print("Invalid seasons entered. Try again.")
+            continue
+
+        if not seasons:
+            continue
+
+        return seasons
 
 
 def add():
