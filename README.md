@@ -26,7 +26,18 @@ gitclone "C:\Users\Jerry\Desktop\sb-journal" gitpull
 
 # Usage 
 
+Welcome: 
 
 ![Screenshot 2022-06-02 170613](https://user-images.githubusercontent.com/103054296/172019676-a6dfd3bf-a3b2-498e-a8fa-ba53c7f26822.png)
+
+View Teams: 
+
 ![Screenshot 2022-06-02 170705](https://user-images.githubusercontent.com/103054296/172019677-93a5ec9e-c808-48c3-8fa6-bee498e4e8db.png)
+
+Delete a Team: 
+
 ![Screenshot 2022-06-02 170945](https://user-images.githubusercontent.com/103054296/172019680-9f58dd92-cd70-4a5e-bd30-bfbe310825d5.png)
+
+Importing JSON File: 
+
+![Screenshot 2022-06-04 135605](https://user-images.githubusercontent.com/103054296/172019760-2193b66e-d90d-45ae-a1d1-73c5c52a672d.png)
